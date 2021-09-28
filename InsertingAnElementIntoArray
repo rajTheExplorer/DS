@@ -1,0 +1,19 @@
+class InsertingAnElementIntoArray
+{
+	public static void main(String[] args) {
+		//Tast: Insert element 100 into the position 3
+		int element=100;
+		int position=3;//if position is three then the index is 2 (index=position-1)
+		int index=position-1;
+			int[] arr={1,2,3,4,5};
+			for(int i=arr.length-1;i>position-1;i--)
+			{
+				arr[i]=arr[i-1];
+			}
+			arr[position-1]=element;
+			for(int i=0;i<arr.length;i++)
+			{
+				System.out.print(arr[i]+" ");
+			}
+	}
+}
